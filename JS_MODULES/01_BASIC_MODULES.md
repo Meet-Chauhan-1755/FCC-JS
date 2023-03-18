@@ -1,8 +1,10 @@
 # 01_BASIC_MODULES
 
     1. Comments in JS are as:-
-    - >  // THIS IS AN INLINE COMMENT
-    - > /* THIS IS A MULTI-LINE COMMENT */
+      ```javascript
+        // THIS IS AN INLINE COMMENT
+        /* THIS IS A MULTI-LINE COMMENT */
+    ```
 
     2. There are 8 data types which are as:-
     - > undefined, null, boolean, string, symbol, bigint, number, and object
