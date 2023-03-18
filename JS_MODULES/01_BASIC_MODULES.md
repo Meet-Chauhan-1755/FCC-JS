@@ -48,10 +48,71 @@
         \b	word boundary
         \f  form feed
 
-    11. Construction strings with var
+    11. Construction strings with var:
     - >const myName = "MEET";
        const myStr = "HELLO,MY NAME IS " + myName + ", Good Morning";
 
     12. Finding length of string:
     - >console.log("Alan Peter".length);
     
+    13. Finding char in strings:
+    - >const firstName = "Charles";
+       const firstLetter = firstName[0]; // firstLetter will have C as value
+
+    14. Assigning string new values:
+    - >let myStr = "Jello World";
+        myStr = "Hello World";
+
+    15. Word blanks:
+    - >It was really ____, and we ____ ourselves ____. 
+        const sentence = "It was really " + "hot" + ", and we " + "laughed" + " ourselves " + "silly" + ".";
+
+    16. Storing values in array:
+    - > const myArray = ["johny",32];
+
+    17. Nesting of arrays:
+    - >const teams = [["Bulls", 23], ["White Sox", 45]];
+
+    18. Accessing array elements:
+    - >const array = [50, 60, 70];
+       console.log(array[0]); // Prints 50
+       const data = array[1]; // Will have 60 as value
+
+    19. Accessing multi-dimension array values:
+    - >const arr = [
+       [1, 2, 3],
+       [4, 5, 6],
+       [7, 8, 9],
+       [[10, 11, 12], 13, 14]
+       ];
+
+       const subarray = arr[3];             // will have [[10, 11, 12], 13, 14]
+       const nestedSubarray = arr[3][0];    // will have [10, 11, 12]
+       const element = arr[3][0][1];        // will have 11
+
+    20. Manipulating arrays with push,pop,shift,unshift:-
+    - > /* push() function (adds element at last)
+        const myArray = [["John", 23], ["cat", 2]];
+        myArray.push(["dog",3]) // myArray will have value [["John", 23], ["cat", 2], ["dog",3]]; */
+
+        /* pull() function (used to remove last element)
+        const threeArr = [1, 4, 6];
+        const oneDown = threeArr.pop();
+        console.log(oneDown);               // will have 6
+        console.log(threeArr);              // will have 1,4 as values */
+
+        /* shift() functon (Used to remove first element)
+        const ourArray = ["Stimpson", "J", ["cat"]];
+        const removedFromOurArray = ourArray.shift(); // will have "Stimpson" */
+
+        /* unshift() function (adds element in beginning)
+        const ourArray = ["Stimpson", "J", "cat"];
+        ourArray.unshift("Happy"); // will contain ["Happy","Stimpson", "J", "cat"] */
+
+    21. Functions :-
+    - > function functionName() {
+        console.log("Hello World");
+        }
+
+    
+
