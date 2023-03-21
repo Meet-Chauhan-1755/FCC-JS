@@ -290,6 +290,98 @@
 
     ```
 
+27. Boolean values:-
+
+    - >Booleans may only be one of two values: true or false.
+    - > Boolean values are never written with quotes. The strings "true" and "false" are not Boolean and have no special meaning in JavaScript.
+
+    ```js
+    function welcomeToBooleans() {
+   
+
+    return true;
+
+    
+    }
+
+    ```
+
+28. Conditional if statement:-
+    - >IF CONDITION is true is true,evalutes inside statement or outside braces statement.
+
+    ```js
+    function trueOrFalse(wasThatTrue) {
+  // Only change code below this line
+    if (wasThatTrue) {
+        return "Yes, that was true";
+    }
+    return "No, that was false";
+    }
+
+    ```
+
+29. Equality operator:
+
+    ```js
+    // Setup
+    function testEqual(val) {
+    if (val==12) { // Change this line
+        return "Equal";
+    }
+    return "Not Equal";
+    }
+
+    testEqual(10);
+
+    ```
+
+30. Strict equality operator:
+
+    ```js
+    // Setup
+    function testStrict(val) {
+    if (val===7) { // Change this line
+        return "Equal";
+    }
+    return "Not Equal";
+    }
+
+    testStrict(10);
+
+    ```
+
+31. Comp equality:-
+
+    ```js
+    // Setup
+    function compareEquality(a, b) {
+    if (10 === "10") { // Change this line
+        return "Equal";
+    }
+    return "Not Equal";
+    }
+
+    compareEquality(10, "10");
+
+    ```
+
+32. Inequality operator:-
+
+    ```js
+    // Setup
+    function compareEquality(a, b) {
+    if (10 === "10") { // Change this line
+        return "Equal";
+    }
+    return "Not Equal";
+    }
+
+    compareEquality(10, "10");
+
+    ```
+
+
+
 
 
 
