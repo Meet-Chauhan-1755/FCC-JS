@@ -226,7 +226,7 @@
 
     ```js
     function myLocalScope() {
-  // Only change code below this line
+     // Only change code below this line
     let myVar;
     console.log('inside myLocalScope', myVar);
     }
@@ -311,7 +311,7 @@
 
     ```js
     function trueOrFalse(wasThatTrue) {
-  // Only change code below this line
+    // Only change code below this line
     if (wasThatTrue) {
         return "Yes, that was true";
     }
