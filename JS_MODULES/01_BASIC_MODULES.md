@@ -714,8 +714,88 @@
 
     ```
 
+51. Javascript Objects:-
+
+    - > Objects are similar to arrays, except that instead of using indexes to access and modify their data, you access the data in objects through what are called properties.
+
+    ```js
+    const myDog = {
+    // Only change code below this line
+    "name":"Beuno",
+    "legs":4,
+    "tails":1,
+    "friends":["cats","pets"]
+
+    // Only change code above this line
+    };
+
+    ```
+
+52. Accessing Object Properties with Dot Notation:-
+
+    - > There are two ways to access the properties of an object: dot notation (.) and bracket notation ([]), similar to an array.
+
+    ```js
+    // Setup
+    const testObj = {
+    "hat": "ballcap",
+    "shirt": "jersey",
+    "shoes": "cleats"
+    };
 
 
+    // Only change code below this line
+    const hatValue = testObj.hat;      // Change this line
+    const shirtValue = testObj.shirt;    // Change this line
+    
+    ```
+
+53. Accessing Object Properties with Bracket Notation
+
+    ```js
+    // Setup
+    const testObj = {
+    "an entree": "hamburger",
+    "my side": "veggies",
+    "the drink": "water"
+    };
+
+    // Only change code below this line
+    const entreeValue = testObj["an entree"]   // Change this line
+    const drinkValue = testObj["the drink"];    // Change this line
+
+    ```
+
+54. Accessing Object Properties with Variables
+
+    ```js
+    // Setup
+    const testObj = {
+    12: "Namath",
+    16: "Montana",
+    19: "Unitas"
+    };
+
+    // Only change code below this line
+    const playerNumber = 16;  // Change this line
+    const player = testObj[playerNumber];   // Change this line
+
+    ```
+
+55. Add New Properties to a JavaScript Object
+
+    ```js
+    const myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+    };
+
+    myDog.bark="woof";
+
+    ```
+    
 
 
 
