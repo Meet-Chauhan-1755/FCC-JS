@@ -934,6 +934,69 @@
     var secondTree = myPlants[1].list[1]; // Change this line
 
     ```
+
+62. Record Collection:-
+
+    ```js
+    function updateRecords(records, id, prop, value) {
+    if (prop !== "tracks" && value !== "") {
+        records[id][prop] = value;
+    } else if (prop === "tracks" && value !== "" && records[id].hasOwnProperty("tracks") === false) {
+        records[id][prop] = [value];
+    } else if (prop === "tracks" && value !== "") {
+        records[id][prop].push(value);
+    } else if (value === "") {
+        delete records[id][prop];
+    }
+    return records;
+    }
+
+    ```
+
+63. Iterate JS with loops:
+
+    - > WHILE LOOP:-
+
+    ```js
+    // Setup
+    const myArray = [];
+    let i=5;
+    while(i>=0){
+    myArray.push(i);
+    i--;
+    }
+    // Only change code below this line
+    
+    ```
+
+    - > FOR LOOP:-
+
+    ```js
+    // Setup
+    const myArray = [];
+    for (let i = 1; i <= 5; i++) {
+    myArray.push(i);
+    }
+    // Only change code below this line
+
+    ```
+
+64. Iterate ODD num with loops:-
+
+    ```js
+    // Setup
+    const myArray = [];
+    for (let i = 1; i <= 10; i += 2) {
+    myArray.push(i);
+    }
+    // Only change code below this line
+
+    ```
+
+    
+
+
+
     
         
 
