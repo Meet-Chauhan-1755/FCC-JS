@@ -1030,6 +1030,18 @@
 
     ```
     
+68. Iterate with JavaScript Do...While Loop:-
+
+    ```js
+    var myArray = [];
+    var i = 10;
+
+    do {
+    myArray.push(i);
+    i++;
+    } while (i <= 10);
+
+    ```
 
 
 
