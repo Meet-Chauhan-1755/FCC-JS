@@ -1063,21 +1063,168 @@
 70. Profile lookup;-
 
     ```js
-    function lookUpProfile(name, prop) {
-    for (let x = 0; x < contacts.length; x++) {
-        if (contacts[x].firstName === name) {
-        if (contacts[x].hasOwnProperty(prop)) {
-            return contacts[x][prop];
-        } else {
-            return "No such property";
+    //Setup
+    var contacts = [
+        {
+            "firstName": "Akira",
+            "lastName": "Laine",
+            "number": "0543236543",
+            "likes": ["Pizza", "Coding", "Brownie Points"]
+        },
+        {
+            "firstName": "Harry",
+            "lastName": "Potter",
+            "number": "0994372684",
+            "likes": ["Hogwarts", "Magic", "Hagrid"]
+        },
+        {
+            "firstName": "Sherlock",
+            "lastName": "Holmes",
+            "number": "0487345643",
+            "likes": ["Intriguing Cases", "Violin"]
+        },
+        {
+            "firstName": "Kristian",
+            "lastName": "Vos",
+            "number": "unknown",
+            "likes": ["Javascript", "Gaming", "Foxes"]
         }
+    ];
+
+    function lookUpProfile(firstName, prop){
+    // Only change code below this line
+    var contact;
+    
+    for (var i=0; i<contacts.length; i++) {
+        if (contacts[i].firstName === firstName) {
+        contact = contacts[i];
+        break;
+        }
+    }
+    
+    if (contact) {
+        if (contact.hasOwnProperty(prop)) {
+        return contact[prop];
+        } else {
+        return "No such property";
+        }
+    } else {
+        return "No such contact";
+    }
+    // Only change code above this line
+    }
+
+    /*
+    SHORTER, BETTER VERSION
+    function lookUp(firstName, prop){
+    // Only change code below this line
+    for (var i=0; i<contacts.length; i++) {
+        var contact = contacts[i];
+        if (contact.firstName===firstName) {
+        if (contact.hasOwnProperty(prop)) {
+            return contact[prop];
+        }
+        return "No such property";
         }
     }
     return "No such contact";
+    // Only change code above this line
+    }
+    */
+
+    // Change these values to test your function
+    lookUpProfile("Kristian", "lastName");
+    lookUpProfile("Sherlock", "likes");
+    lookUpProfile("Harry", "likes");
+    lookUpProfile("Bob", "number");
+    lookUpProfile("Akira", "address");
+
+    ```
+
+71. Generate Random no with fractions:-
+
+    ```js
+    function randomFraction() {
+
+    // Only change code below this line
+
+    return Math.random();
+
+    // Only change code above this line
     }
 
     ```
-    
+
+72. Generate Random Whole Numbers with JavaScript
+
+    ```js
+    function randomWholeNum() {
+
+    // Only change code below this line
+
+    return Math.floor(Math.random()*10);
+    }
+
+    ```
+
+73. Generate Random Whole Numbers within a Range:-
+
+    ```js
+    // Example
+    function ourFunction(ourMin, ourMax) {
+
+    return Math.floor(Math.random() * (ourMax - ourMin + 1)) + ourMin;
+    }
+
+    ourFunction(1, 9);
+
+    // Only change code below this line.
+
+    function randomRange(myMin, myMax) {
+
+    return Math.floor(Math.random() * (myMax - myMin + 1) + myMin);
+
+    }
+
+    // Change these values to test your function
+    var myRandom = randomRange(5, 15);
+
+    ```
+
+74. Using parseInt:-
+
+    ```js
+    function convertToInteger(str) {
+    return parseInt(str);
+    }
+
+    convertToInteger("56");
+
+    ```
+
+75. Using parseInt with radix:-
+
+    ```js
+    function convertToInteger(str) {
+    return parseInt(str,2);
+    }
+
+    convertToInteger("10011");
+
+    ```
+
+76. Use of ternary operator:-
+
+    ```js
+    function checkEqual(a, b) {
+    return a==b?"Equal":"Not Equal";
+    }
+
+    checkEqual(1, 2);
+
+    ```
+
+
 
 
 
