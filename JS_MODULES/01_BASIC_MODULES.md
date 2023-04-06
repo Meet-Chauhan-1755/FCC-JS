@@ -1224,6 +1224,30 @@
 
     ```
 
+77. Using recursion to create countdown:-
+
+    ```js
+    function countdown(n){
+    return n < 1 ? [] : [n].concat(countdown(n - 1));
+    }
+
+    ```
+
+78. Using Recursion to create range of numbers:-
+
+    ```js
+    function rangeOfNumbers(startNum, endNum) {
+    if (endNum - startNum === 0) {
+        return [startNum];
+    } else {
+        const numbers = rangeOfNumbers(startNum, endNum - 1);
+        numbers.push(endNum);
+        return numbers;
+    }
+    }
+
+    ```
+
 
 
 
