@@ -1248,6 +1248,65 @@
 
     ```
 
+79. Counting cards:-
+
+    ```js
+    let count = 0;
+
+    function cc(card) {
+    // Only change code below this line
+    switch (card) {
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        count++;
+        break;
+        case 10:
+        case "J":
+        case "Q":
+        case "K":
+        case "A":
+        count--;
+        break;
+    }
+    if (count > 0) {
+        return count + " Bet";
+    } else {
+        return count + " Hold";
+    }
+    // Only change code above this line
+    }
+
+    cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+    ```
+
+80. Stand in line:-
+
+    ```js
+    function nextInLine(arr, item) {
+    // Your code here
+
+    var queue = arr.push(item);
+
+    var removeItem = arr.shift();
+
+    return removeItem;  // Change this line
+    }
+
+    // Test Setup
+    var testArr = [1,2,3,4,5];
+
+    // Display Code
+    console.log("Before: " + JSON.stringify(testArr));
+    console.log(nextInLine(testArr, 6)); // Modify this line to test
+    console.log("After: " + JSON.stringify(testArr));
+
+    ```
+
+
 
 
 
