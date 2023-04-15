@@ -102,6 +102,33 @@
 
     ```
 
+8. Use the Rest Parameter with Function Parameters:-
+
+    ```js
+    const sum = (...args) => {
+    let total = 0;
+    for (let i = 0; i < args.length; i++) {
+        total += args[i];
+    }
+    return total;
+    }
+
+    ```
+
+9. Use the Spread Operator to Evaluate Arrays In-Place
+
+    ```js
+
+   const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+    let arr2;
+    (function() {
+    "use strict";
+    arr2 = [...arr1]; // change this line
+    })();
+    console.log(arr2);
+
+    ```
+
 
     
         
